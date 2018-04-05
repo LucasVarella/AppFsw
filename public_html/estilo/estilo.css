@@ -1,0 +1,19 @@
+body{
+    background-color: #56f442;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.corpo{
+    position: absolute;
+    background-color: white;
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+    left: 1px;
+}
+
+.borda01{
+  border-radius: 20px;  
+}
