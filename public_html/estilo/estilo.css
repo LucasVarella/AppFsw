@@ -1,5 +1,5 @@
 body{
-    background-color: #56f442;
+    background-color: #8bce03;
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -26,11 +26,27 @@ body{
 }
 
 #imagem2{
-    width: 80%;
-    height: 10%;
-    position: absolute;
+   
+
+    position: static;
     top: 88%;
-    left:10%;
+    max-width: 80%;
+    max-height: 10%;
+    left: 11%;
+   
 
+}
 
+#login{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 40%;
+}
+
+.bttLogin{
+    display:inline-block;
+    text-decoration:none;
+    padding:6px 4px;
 }
