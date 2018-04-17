@@ -1,9 +1,17 @@
-body{
+.fundo-verde{
     background-color: #8bce03;
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+.fundo-branco{
+    background-color: #white;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 
 .corpo{
     position: absolute;
@@ -14,24 +22,22 @@ body{
     left: 1px;
 }
 
-.borda01{
+.borda-redonda-10px{
     border-radius: 20px;  
 }
 
-#imagem1{
-    margin-top: 5px;
+
+
+.ImagemLogoIF{
     width: 50%;
     height: 50%;
     max-width: 200px;
-
-
+    margin-top: 15px;
 }
 
-#imagem2{
+.ImagemLogoFSW{
     margin-top: 360px;
-    max-width: 80%;
-    height: 10%;
-    max-height: 10%;
+    
 }
 
 #login{
@@ -44,7 +50,16 @@ body{
 }
 
 .bttLogin{
-    display:inline-block;
-    text-decoration:none;
-    padding:6px 4px;
+ 
+     background-color: #8bce03;
+
+}
+
+.div-100{
+    height: auto;
+}
+
+input{
+    border-radius:5px;
+   
 }

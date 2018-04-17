@@ -1,0 +1,292 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../estilo/estilo.css" rel="stylesheet">
+        <link href="../bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    </head>
+    <body class="fundo-verde">
+
+
+        <div class="row">
+
+            <div class='container corpo col-md-12 borda-redonda-10px div-100 ' style="background: snow">    
+                <!--inicio div meio -->
+                <h2 style="text-align: center; color: #360">Autocadastro do Servidor</h2>
+                <br>
+                <div class="mensagemAtencao"><!--inicio class mensagemAtencao -->
+                    <div class="iconeAtencao">
+                      
+                    </div><!--fim class iconeAtencao -->
+                    <div class="mensagemTexto">
+                        <!--inicio class mensagemTexto -->
+                          <img src="../imgs/semaforo.png"> Os campos precedidos de *(asterisco) são obrigatórios!
+                    </div>
+                    <!--fim class mensagemTexto -->
+                    <br>
+                </div><!--fim class mensagemAtencao -->
+
+                <fieldset><!--Início do fieldset da entrada de dados -->
+                    <legend>Inclusão de novo servidor</legend><form action="" method="post">
+                        <div class="linhaFieldset">
+                            <input name="usloId" value="" type="hidden">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*Nome</label>
+                            <input name="usloNome" value="" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*CPF</label>
+                            <input name="usloCpf" value="" class="mascaraCPF" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*Rg</label>
+                            <input name="usloRg" value="" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*Orgão Emissor</label>
+                            <input name="usloOrgaoEmissor" value="" type="text">
+                        </div>
+
+                        <div class="linhaSelect">
+                            <label>*Estado do Orgão Emissor</label>
+                            <select name="usloUfOrgaoEmissor" id="usloUfOrgaoEmissor">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AM">AM</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MG">MG</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="PR">PR</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                        <div class="linhaFieldset">
+                            <label>*Data de Emissão </label>
+                            <input name="usloDataEmissao" class="datePicker mascaraData hasDatepicker" size="16" value="" id="dp1523898324971" type="text">
+                        </div>
+                        <div class="linhaFieldset">
+                            <label>*Sexo </label>
+                            <input name="usloSexo" value="M" checked="checked" type="radio"> Masculino
+                            <input name="usloSexo" value="F" type="radio"> Feminino
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Telefone Fixo</label>
+                            <input name="usloTelefoneFixo" value="" class="mascaraFone" size="16" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Telefone Celular</label>
+                            <input name="usloTelefoneCelular" value="" class="mascaraFone" size="16" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*E-mail</label>
+                            <input name="usloEmail" value="" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <input name="usuaUsloId" value="" type="hidden">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*Nacionalidade</label>
+                            <input name="usuaNacionalidade" value="Brasileira" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*País</label>
+                            <input name="usuaPais" value="Brasil" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Passaporte</label>
+                            <input name="usuaPassaporte" value="" type="text">
+                        </div>
+                        <div class="linhaFieldset"><label>Visto permanente?</label><div class="campoRadio4"><label><input name="usuaVistoPermanente" value="1" type="radio">Sim</label><label><input name="usuaVistoPermanente" value="0" checked="" type="radio">Não</label></div></div>
+                        <div class="linhaFieldset">
+                            <label>Período de Vigência Inicial</label>
+                            <input name="usuaPeriodoVigenciaInicial" value="" class="datePicker mascaraData hasDatepicker" size="16" placeholder="" id="dp1523898324972" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Período de Vigência Final</label>
+                            <input name="usuaPeriodoVigenciaFinal" value="" class="datePicker mascaraData hasDatepicker" size="16" placeholder="" id="dp1523898324973" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Endereço</label>
+                            <input name="usuaEndereco" value="" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>CEP</label>
+                            <input id="usuaCep" name="usuaCep" value="" class="" maxlength="8" size="16" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Cidade</label>
+                            <input name="usuaCidade" value="" type="text">
+                        </div>
+
+                        <div class="linhaSelect">
+                            <label>UF</label>
+                            <select name="usuaUf" id="usuaUf">
+                                <option value="-1">Escolha um estado...</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AM">AM</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MG">MG</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="PR">PR</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                        <div class="linhaFieldset"><label>Maior Titulação concluída</label><div class="campoRadio4"><label id="primeiroRadio"><input name="usuaMaiorTitulacaoConcluida" value="0" checked="" type="radio">Fundamental</label></div><div class="radioEmLinhas"><label><input name="usuaMaiorTitulacaoConcluida" value="1" type="radio">Médio</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="2" type="radio">Graduação</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="3" type="radio">Especialização</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="4" type="radio">Mestrado</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="5" type="radio">Doutorado</label><br></div></div>
+                        <div class="linhaFieldset">
+                            <label>Link Lattes</label>
+                            <input name="usuaLinkLattes" value="" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>Data de atualização do Lattes</label>
+                            <input name="usuaDtUltimaAtualizacao" value="" class="datePicker mascaraData hasDatepicker" size="16" placeholder="" id="dp1523898324974" type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*Siape</label>
+                            <input name="servSiape" value="" placeholder="Digite o seu SIAPE." type="text">
+                        </div>
+
+                        <div class="linhaFieldset">
+                            <label>*Senha do SUAP</label>
+                            <input name="senhaSuap" value="" placeholder="Digite a sua senha do SUAP para averiguação." type="password">
+                        </div>
+                        <div class="linhaFieldset"><label>*Bolsista do CNPQ?</label><div class="campoRadio4"><label><input name="servBolsistaCnpq" value="1" onclick="montaCategoriaSeBolsista(this.value, '1+PQ', '')" type="radio">Sim</label><label><input name="servBolsistaCnpq" value="0" checked="" onclick="montaCategoriaSeBolsista(this.value, '1+PQ', '')" type="radio">Não</label></div></div><div id="add_input_div" class="add_input_div"></div><div class="linhaFieldset"><label>*Cargo ou função</label><div class="campoRadio4"><label><input name="servCargoFuncao" value="A" type="radio">Técnico Administrativo</label><label><input name="servCargoFuncao" value="D" type="radio">Docente</label></div></div><div class="linhaFieldset"><label>*Cursando Pós-Graduacao?</label><div class="campoRadio4"><label><input name="servCursandoPosGraduacao" value="1" type="radio">Sim</label><label><input name="servCursandoPosGraduacao" value="0" checked="" type="radio">Não</label></div></div>
+                        <div class="linhaSelect">
+                            <label>*Câmpus</label>
+                            <select name="campId" id="campId" onchange="montaOptionsParaCombo('campId', 'dptoId', 'DepartamentoAdo02', 'buscaArrayDptoAcademicosComChefiaPorCampus')">
+                                <option value="-1">Selecione seu câmpus</option>
+                                <option value="1">Câmpus Goiânia</option>
+                                <option value="2">Câmpus Jataí</option>
+                                <option value="3">Câmpus Inhumas</option>
+                                <option value="4">Câmpus Itumbiara</option>
+                                <option value="5">Câmpus Uruaçu</option>
+                                <option value="7">Câmpus Anápolis</option>
+                                <option value="8">Câmpus Formosa</option>
+                                <option value="9">Câmpus Luziânia</option>
+                                <option value="11">Câmpus Aparecida de Goiânia</option>
+                                <option value="12">Câmpus Cidade de Goiás</option>
+                                <option value="13">Câmpus Virtual de Ead</option>
+                                <option value="14">Câmpus Goiânia Oeste</option>
+                                <option value="24">Câmpus Águas Lindas</option>
+                                <option value="25">Câmpus Valparaíso</option>
+                                <option value="26">Câmpus Senador Canedo</option>
+                            </select>
+                        </div>
+
+                        <div class="linhaSelect">
+                            <label>*Departamento</label>
+                            <select name="dptoId" id="dptoId">
+                                <option value="-1">Aguardando selecionar câmpus</option>
+                            </select>
+                        </div>
+                        <div class="linhaFieldset">
+                            <label>*Data de Lotação</label>
+                            <input name="loseDtInicial" class="datePicker mascaraData hasDatepicker" size="16" value="" id="dp1523898324975" type="text">
+                        </div>
+                        <div class="linhaFieldset"><label>*Solicitar acesso para:</label><div class="checkboxEmColuna"><div class="campocheckboxEmColuna">
+                                    <input name="arteSiglas[]" value="ACAD" type="checkbox">ACAD - Sistema para Controle de Dados Acadêmico</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="ARTE" type="checkbox">ARTE - Sistema para Controle de Artefatos, Artesãos, Usuários e Projetos</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="CRDO" type="checkbox">CRDO - Sistema para Controle de Recebimento de Documentos</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="CTCC" type="checkbox">CTCC - Sistema de Controle de Trabalho de Conclusão de Curso</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="FSW" type="checkbox">FSW - Fábrica de Software - Módulos Globais</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="MTPS" type="checkbox">MTPS - Sistema para Controlar o Portal do Curso de Mestrado Profissional em Tecnologia de Processos Sustent</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SAAA" type="checkbox">SAAA - Sistema para Acompanhamento de Atividades Acadêmicas</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SAAS" type="checkbox">SAAS - Sistema de Apoio à Avaliação de Servidores</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SARA" type="checkbox">SARA - Sistema de Alocação de Recursos Acadêmicos</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SCAD" type="checkbox">SCAD - Sistema para Controle Administrativo</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SCEC" type="checkbox">SCEC - Sistema para Controle de Eventos e Certificados</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SCLD" type="checkbox">SCLD - Sistema para Controle de Livros Didáticos</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SCOL" type="checkbox">SCOL - Sistema para Controle da OLINFEG</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SCPE" type="checkbox">SCPE - Sistema para Controle e Submissão de Planos de Ensino</div>
+                                <br>
+                                <div class="campocheckboxEmColuna"><input name="arteSiglas[]" value="SSAP" type="checkbox">SSAP - Sistema de Submissão e Acompanhamento de Projetos de Pesquisa</div>
+                            </div>  <br>
+                            <!-- #fecha checkboxEmColuna --></div>
+                        <!-- #fecha linhaFieldset -->
+                        <button class="btn btn-dark btn-primary btn-block" type="submit" name="acao" value="salva" id="salva">Salvar e Sair</button>
+                    </form>
+                </fieldset><!--Final do fieldset da entrada de dados -->		 
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </body>
+</html>
