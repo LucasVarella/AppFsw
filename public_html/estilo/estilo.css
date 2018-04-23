@@ -12,6 +12,12 @@
     background-repeat: no-repeat;
 }
 
+.fundo-snow{
+    background-color: snow;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 .corpo{
     position: absolute;
@@ -26,13 +32,19 @@
     border-radius: 20px;  
 }
 
-iframe{
+.iframeIndex{
     border: none;
     width:100%;
     height: 540px;
 }
 
-
+.iframeCadastro{
+    border: none;
+    width:100%;
+    height: 550px;
+    
+  
+}
 .ImagemLogoIF{
     width: 50%;
     height: 50%;
@@ -67,6 +79,23 @@ iframe{
 input{
     border-radius:5px;
     width: 100%;
+   
+}
+
+.input-2{
+    border-radius:5px;
+    width: 20%;
+   
+}
+.input-3{
+    border-radius:5px;
+    width: 5%;
+   
+}
+
+.input-4{
+    border-radius:5px;
+    width: 50%;
    
 }
 

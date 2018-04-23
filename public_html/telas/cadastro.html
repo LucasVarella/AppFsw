@@ -8,12 +8,12 @@
         <link href="../estilo/estilo.css" rel="stylesheet">
         <link href="../bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
     </head>
-    <body class="fundo-verde">
+    <body class="">
 
 
         <div class="row">
 
-            <div class='container corpo col-md-12 borda-redonda-10px div-100 ' style="background: snow">    
+            <div class='container corpo col-md-12 borda-redonda-10px div-100 '>    
                 <!--inicio div meio -->
                 <h2 style="text-align: center; color: #360">Autocadastro do Servidor</h2>
                 <br>
@@ -54,7 +54,7 @@
                             <label>*Orgão Emissor</label>
                             <input name="usloOrgaoEmissor" value="" type="text">
                         </div>
-
+                        <br>
                         <div class="linhaSelect">
                             <label>*Estado do Orgão Emissor</label>
                             <select name="usloUfOrgaoEmissor" id="usloUfOrgaoEmissor">
@@ -87,16 +87,20 @@
                                 <option value="TO">TO</option>
                             </select>
                         </div>
+                        <br>
                         <div class="linhaFieldset">
                             <label>*Data de Emissão </label>
                             <input name="usloDataEmissao" class="datePicker mascaraData hasDatepicker" size="16" value="" id="dp1523898324971" type="text">
                         </div>
+                        <br>
                         <div class="linhaFieldset">
                             <label>*Sexo </label>
-                            <input name="usloSexo" value="M" checked="checked" type="radio"> Masculino
-                            <input name="usloSexo" value="F" type="radio"> Feminino
-                        </div>
+                            <br>
+                            <label><input class="input-4" name="usloSexo" value="M" checked="checked" type="radio">Masculino</label>
+                            <label> <input class="input-4" name="usloSexo" value="F" type="radio">Feminino</label>
 
+                        </div>
+                        <br>
                         <div class="linhaFieldset">
                             <label>Telefone Fixo</label>
                             <input name="usloTelefoneFixo" value="" class="mascaraFone" size="16" type="text">
@@ -130,7 +134,15 @@
                             <label>Passaporte</label>
                             <input name="usuaPassaporte" value="" type="text">
                         </div>
-                        <div class="linhaFieldset"><label>Visto permanente?</label><div class="campoRadio4"><label><input name="usuaVistoPermanente" value="1" type="radio">Sim</label><label><input name="usuaVistoPermanente" value="0" checked="" type="radio">Não</label></div></div>
+                        <br>
+                        <div class="linhaFieldset">
+                            <label>Visto permanente?</label>
+                            <div class="campoRadio4">
+                                <label><input class="input-4" name="usuaVistoPermanente" value="1" type="radio">Sim</label>
+                                <label><input class="input-4" name="usuaVistoPermanente" value="0" checked="" type="radio">Não</label>
+                            </div>
+                        </div>
+                        <br>
                         <div class="linhaFieldset">
                             <label>Período de Vigência Inicial</label>
                             <input name="usuaPeriodoVigenciaInicial" value="" class="datePicker mascaraData hasDatepicker" size="16" placeholder="" id="dp1523898324972" type="text">
@@ -155,7 +167,7 @@
                             <label>Cidade</label>
                             <input name="usuaCidade" value="" type="text">
                         </div>
-
+                        <br>
                         <div class="linhaSelect">
                             <label>UF</label>
                             <select name="usuaUf" id="usuaUf">
@@ -189,7 +201,20 @@
                                 <option value="TO">TO</option>
                             </select>
                         </div>
-                        <div class="linhaFieldset"><label>Maior Titulação concluída</label><div class="campoRadio4"><label id="primeiroRadio"><input name="usuaMaiorTitulacaoConcluida" value="0" checked="" type="radio">Fundamental</label></div><div class="radioEmLinhas"><label><input name="usuaMaiorTitulacaoConcluida" value="1" type="radio">Médio</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="2" type="radio">Graduação</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="3" type="radio">Especialização</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="4" type="radio">Mestrado</label><br><label><input name="usuaMaiorTitulacaoConcluida" value="5" type="radio">Doutorado</label><br></div></div>
+                        <br>
+                        <div class="linhaFieldset"><label>Maior Titulação concluída:</label>
+
+                            <div class="campoRadio4">
+                                <label id="primeiroRadio">
+                                    <input class="input-3" name="usuaMaiorTitulacaoConcluida" value="0" checked="" type="radio"> Fundamental</label></div>
+                            <div class="radioEmLinhas">
+                                <label><input class="input-3" name="usuaMaiorTitulacaoConcluida" value="1" type="radio"> Médio</label><br>
+                                <label><input class="input-3" name="usuaMaiorTitulacaoConcluida" value="2" type="radio"> Graduação</label><br>
+                                <label><input class="input-3" name="usuaMaiorTitulacaoConcluida" value="3" type="radio"> Especialização</label><br>
+                                <label><input class="input-3" name="usuaMaiorTitulacaoConcluida" value="4" type="radio"> Mestrado</label><br>
+                                <label><input class="input-3" name="usuaMaiorTitulacaoConcluida" value="5" type="radio"> Doutorado</label><br></div>
+                        </div>
+                        <br>
                         <div class="linhaFieldset">
                             <label>Link Lattes</label>
                             <input name="usuaLinkLattes" value="" type="text">
@@ -209,7 +234,31 @@
                             <label>*Senha do SUAP</label>
                             <input name="senhaSuap" value="" placeholder="Digite a sua senha do SUAP para averiguação." type="password">
                         </div>
-                        <div class="linhaFieldset"><label>*Bolsista do CNPQ?</label><div class="campoRadio4"><label><input name="servBolsistaCnpq" value="1" onclick="montaCategoriaSeBolsista(this.value, '1+PQ', '')" type="radio">Sim</label><label><input name="servBolsistaCnpq" value="0" checked="" onclick="montaCategoriaSeBolsista(this.value, '1+PQ', '')" type="radio">Não</label></div></div><div id="add_input_div" class="add_input_div"></div><div class="linhaFieldset"><label>*Cargo ou função</label><div class="campoRadio4"><label><input name="servCargoFuncao" value="A" type="radio">Técnico Administrativo</label><label><input name="servCargoFuncao" value="D" type="radio">Docente</label></div></div><div class="linhaFieldset"><label>*Cursando Pós-Graduacao?</label><div class="campoRadio4"><label><input name="servCursandoPosGraduacao" value="1" type="radio">Sim</label><label><input name="servCursandoPosGraduacao" value="0" checked="" type="radio">Não</label></div></div>
+                        <br>
+                        <div class="linhaFieldset"><label>*Bolsista do CNPQ?</label>
+                            <div class="campoRadio4">
+                                <label><input class="input-4" name="servBolsistaCnpq" value="1" onclick="montaCategoriaSeBolsista(this.value, '1+PQ', '')" type="radio">Sim</label>
+                                <label><input class="input-4" name="servBolsistaCnpq" value="0" checked="" onclick="montaCategoriaSeBolsista(this.value, '1+PQ', '')" type="radio">Não</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="add_input_div" class="add_input_div"></div>
+                        <div class="linhaFieldset"><label>*Cargo ou função</label><div class="campoRadio4">
+
+                                <label><input class="input-3" name="servCargoFuncao" value="A" type="radio"> Técnico Administrativo</label>
+                                <br>
+                                <label><input class="input-3" name="servCargoFuncao" value="D" type="radio"> Docente</label>
+
+                            </div>
+                        </div>
+                        <br>
+                        <div class="linhaFieldset"><label>*Cursando Pós-Graduacao?</label>
+                            <div class="campoRadio4">
+                                <label><input class="input-4" name="servCursandoPosGraduacao" value="1" type="radio">Sim</label>
+                                <label><input class="input-4" name="servCursandoPosGraduacao" value="0" checked="" type="radio">Não</label>
+                            </div>
+                        </div>
+                        <br>
                         <div class="linhaSelect">
                             <label>*Câmpus</label>
                             <select name="campId" id="campId" onchange="montaOptionsParaCombo('campId', 'dptoId', 'DepartamentoAdo02', 'buscaArrayDptoAcademicosComChefiaPorCampus')">
@@ -231,18 +280,19 @@
                                 <option value="26">Câmpus Senador Canedo</option>
                             </select>
                         </div>
-
+                        <br>
                         <div class="linhaSelect">
                             <label>*Departamento</label>
                             <select name="dptoId" id="dptoId">
                                 <option value="-1">Aguardando selecionar câmpus</option>
                             </select>
                         </div>
+                        <br>
                         <div class="linhaFieldset">
                             <label>*Data de Lotação</label>
                             <input name="loseDtInicial" class="datePicker mascaraData hasDatepicker" size="16" value="" id="dp1523898324975" type="text">
                         </div>
-
+                        <br>
                         <!-- #fecha linhaFieldset -->
                         <button class="btn btn-dark btn-primary btn-block" type="submit" name="acao" value="salva" id="salva">Salvar e Sair</button>
                     </form>
