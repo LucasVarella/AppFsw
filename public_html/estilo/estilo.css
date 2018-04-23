@@ -6,7 +6,7 @@
 }
 
 .fundo-branco{
-    background-color: #white;
+    background-color: white;
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -26,6 +26,11 @@
     border-radius: 20px;  
 }
 
+iframe{
+    border: none;
+    width:100%;
+    height: 540px;
+}
 
 
 .ImagemLogoIF{
@@ -36,7 +41,7 @@
 }
 
 .ImagemLogoFSW{
-    margin-top: 360px;
+ margin-top:8px;
     
 }
 
@@ -61,5 +66,7 @@
 
 input{
     border-radius:5px;
+    width: 100%;
    
 }
+
