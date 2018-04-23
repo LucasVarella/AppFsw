@@ -1,0 +1,101 @@
+.fundo-verde{
+    background-color: #8bce03;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.fundo-branco{
+    background-color: white;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.fundo-snow{
+    background-color: snow;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.corpo{
+    position: absolute;
+    background-color: white;
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+    left: 1px;
+}
+
+.borda-redonda-10px{
+    border-radius: 20px;  
+}
+
+.iframeIndex{
+    border: none;
+    width:100%;
+    height: 540px;
+}
+
+.iframeCadastro{
+    border: none;
+    width:100%;
+    height: 550px;
+    
+  
+}
+.ImagemLogoIF{
+    width: 50%;
+    height: 50%;
+    max-width: 200px;
+    margin-top: 15px;
+}
+
+.ImagemLogoFSW{
+ margin-top:8px;
+    
+}
+
+#login{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: 40%;
+    text-align: center;
+}
+
+.bttLogin{
+ 
+     background-color: #8bce03;
+
+}
+
+.div-100{
+    height: auto;
+}
+
+input{
+    border-radius:5px;
+    width: 100%;
+   
+}
+
+.input-2{
+    border-radius:5px;
+    width: 20%;
+   
+}
+.input-3{
+    border-radius:5px;
+    width: 5%;
+   
+}
+
+.input-4{
+    border-radius:5px;
+    width: 50%;
+   
+}
+
