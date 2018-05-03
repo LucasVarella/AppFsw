@@ -25,8 +25,8 @@
                 <div class="" id="login">
                     <img class="mb-4" src="" alt="" width="72" height="72">
                     <h1 class="h5 mb-3 font-weight-normal text-center">Bem Vindo!</h1>
-                    <label for="inputEmail" class="sr-only">Usuário</label>
-                    <input id="inputEmail" class="form-control" placeholder="Usuário do SUAP" required="" autofocus="" type="email">
+                    <label for="inputNumber" class="sr-only">Usuário</label>
+                    <input id="inputNumber" maxlength="15" class="form-control" placeholder="Usuário do SUAP" required="" autofocus="" type="text" onkeypress='return SomenteNumero(event)'>
                     <label for="inputPassword" class="sr-only">Senha</label>
                     <input id="inputPassword" class="form-control" placeholder="Senha" required="" type="password">
                     <div class="checkbox mb-3">
@@ -44,7 +44,7 @@
 
             </div>
         </div>
-
+        <script src="../javascript/javascript.js"></script> 
     </body>
 
 </html>
