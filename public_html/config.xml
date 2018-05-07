@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" version="1.0.0" id="org.tatuapu.cafenesy">
+	<name>
+		SARAAPP
+	</name>
+	<description>
+		
+	</description>
+	<author href="http://profvictorhugo.esy.es" email="hullopes@hotmail.com">
+		Victor Hugo Lopes
+	</author>
+	<icon src="img/icon.png" />
+	<gap:splash src="img/splash.png" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<gap:platform name="android" />
+</widget>
