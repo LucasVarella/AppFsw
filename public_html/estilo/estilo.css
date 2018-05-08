@@ -30,6 +30,7 @@
 
 .borda-redonda-10px{
     border-radius: 20px;  
+    padding: 2px;
 }
 
 .iframeIndex{
@@ -40,7 +41,6 @@
 
 .ImagemLogoIF{
     width: 50%;
-    height: 100%;
     max-width: 200px;
     margin-top: 5%;
 }
@@ -71,28 +71,6 @@
     height: auto;
 }
 
-input{
-    border-radius:5px;
-    width: 100%;
-
-}
-
-.input-2{
-    border-radius:5px;
-    width: 20%;
-
-}
-.input-3{
-    border-radius:5px;
-    width: 5%;
-
-}
-
-.input-4{
-    border-radius:5px;
-    width: 50%;
-
-}
 
 
 fieldset{
